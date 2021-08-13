@@ -95,6 +95,7 @@ body{
     width: 80%;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 1;
 }
 .slider_iletisim h5{
     color: white;
@@ -132,8 +133,12 @@ object-fit: cover;
    text-align: center;
 }
 .orta_yazi{
-    top:30%;
-    left: 10%;
+       top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 1;
+}
 }
 .orta_yazi h6 {
    font-size: 18px;
@@ -141,6 +146,7 @@ object-fit: cover;
    color: #FF5D5D;
    text-align: center;
    margin-bottom: 150px;
+   
 
 }
 .orta_yazi h4{
@@ -198,6 +204,7 @@ object-fit: cover;
 }
 .tumunu_gor {
     padding:50px 30px 50px 200px; 
+    text-decoration: none;
 }
 .sosyal_medya_icon img {
     width: 120px;
@@ -748,8 +755,6 @@ font-family: "BR Cobane";
     height: 267px;
     object-fit: cover;
     object-fit: contain;
-    
-    
 }
 .detay_teklif_iste {
     width: 156px;
@@ -856,8 +861,6 @@ font-family: "BR Cobane";
     background-color: #030303 !important;
     width: auto;
 }
-
-
 .arka_plan_heberler_sayfa {
     background-color: black;
     position: fixed;
@@ -936,9 +939,14 @@ font-family: "BR Cobane";
     border-color: #FF5D5D;
     width: 191px;
     height: 74px;
-    margin-left: 370px;
+    margin-left: 530px;
 }
+.btn-primary:hover {
+    background-color: #fff;
+    border-color: #fff;
+    color: #FF5D5D;
 
+}
 .form-control {
     height:72px;
     width: 519px;
@@ -955,3 +963,6 @@ font-family: "BR Cobane";
     margin-left: 450px;
     margin-bottom: 20px;
 }
+.form-control:focus {
+    background-color: transparent;
+  }

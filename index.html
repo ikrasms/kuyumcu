@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <title>Anasayfa</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -29,16 +31,17 @@
                                 <a class="nav-link active" aria-current="page" href="index.html">ANASAYFA</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="hakkımızda.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  HAKKIMIZDA
+                                <a class="nav-link dropdown-toggle" href="hakkımızda.html" id="navbarDropdownMenuLink"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    HAKKIMIZDA
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                  <li><a class="dropdown-item" href="#">ÜRETİM HATLARI</a></li>
-                                  <li><a class="dropdown-item" href="#">ELYAF HAZIRLAMA SİSTEMLERİ</a></li>
-                                  <li><a class="dropdown-item" href="#">ELYAF GERİ KAZANIM SİSTEMLERİ</a></li>
-                                  <li><a class="dropdown-item" href="#">HAMMADDE SATIŞI</a></li>
+                                    <li><a class="dropdown-item" href="#">ÜRETİM HATLARI</a></li>
+                                    <li><a class="dropdown-item" href="#">ELYAF HAZIRLAMA SİSTEMLERİ</a></li>
+                                    <li><a class="dropdown-item" href="#">ELYAF GERİ KAZANIM SİSTEMLERİ</a></li>
+                                    <li><a class="dropdown-item" href="#">HAMMADDE SATIŞI</a></li>
                                 </ul>
-                              </li>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="urunler.html">ÜRÜNLERİMİZ</a>
                             </li>
@@ -65,23 +68,57 @@
             </nav>
         </div>
     </div>
-    <div id="slider">
-        <div class="slider_resim">
-            <img src="image/AdobeStock_45439866.png">
+    <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+            <div data-history="1" class="swiper-slide slider">
+                <div class="slider_resim">
+                    <img src="image/AdobeStock_45439866.png">
+                </div>
+                <div class="col-4 slider_yazi">
+                    <h3>ELYAF GERİ KAZANIM
+                        SİSTEMLERİ</h3>
+                </div>
+            </div>
+            <div data-history="1" class="swiper-slide slider">
+                <div class="slider_resim">
+                    <img src="image/AdobeStock_45439866.png">
+                </div>
+                <div class="col-4 slider_yazi">
+                    <h3>ELYAF GERİ KAZANIM
+                        SİSTEMLERİ</h3>
+                </div>
+            </div>
+            <div data-history="1" class="swiper-slide slider">
+                <div class="slider_resim">
+                    <img src="image/AdobeStock_45439866.png">
+                </div>
+                <div class="col-4 slider_yazi">
+                    <h3>ELYAF GERİ KAZANIM
+                        SİSTEMLERİ</h3>
+                </div>
+            </div>
+             <div data-history="1" class="swiper-slide slider">
+                <div class="slider_resim">
+                    <img src="image/AdobeStock_45439866.png">
+                </div>
+                <div class="col-4 slider_yazi">
+                    <h3>ELYAF GERİ KAZANIM
+                        SİSTEMLERİ</h3>
+                </div>
+            </div>
+            <div data-history="1" class="swiper-slide slider">
+                <div class="slider_resim">
+                    <img src="image/AdobeStock_45439866.png">
+                </div>
+                <div class="col-4 slider_yazi">
+                    <h3>ELYAF GERİ KAZANIM
+                        SİSTEMLERİ</h3>
+                </div>
+            </div>
         </div>
-            <div class="col-4 slider_yazi">
-                <h3>ELYAF GERİ KAZANIM
-                    SİSTEMLERİ</h3>
-            </div>
-        <div class="navigator d-flex align-items-center justify-content-between">
-
-            <div class="icon d-flex align-items-center justify-content-center">
-                <img src="image/Path.png" alt="">
-            </div>
-            <div class="icon right d-flex align-items-center justify-content-center">
-                <img src="image/Path.png" alt="">
-            </div>
-        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        
         <div class="slider_iletisim row align-items-center justify-content-center">
             <div class="col-6 kesfet">
                 <h5>KEŞFET</h5>
@@ -90,10 +127,7 @@
                 <img src="image/Group 19.png">
             </div>
         </div>
-
     </div>
-
-
     <div id="orta_kisim">
         <div class="orta_kisim_resim">
             <img src="image/411@2x.png">
@@ -109,7 +143,6 @@
                 velit.</p>
         </div>
     </div>
-
     <div class="orta_kutu">
         <div class="col-12 arka_plan row align-items-center justify-content-center">
             <div class="col-3 deneyim">
@@ -150,23 +183,10 @@
                     <button type="button" class="btn btn-outline-light">Tümünü Gör</button>
                 </div>
             </div>
-            <div class="col-12 urunler row">
-                <div class="col-3 urun">
-                    <div class="urun_baslik ">
-                        <h4>Elyaf Geri Kazanma Makineleri</h4>
-                    </div>
-                    <div class="urun_icerik">
-                        <h5>DT80 Box Odası</h5>
-                        <div class="urun_icerik_img">
-                            <img src="image/Bitmap@2x.png">
-                        </div>
-                        <div class="ok">
-                            <img src="image/Path@2x.png ">
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-3 urun">
+            <div class="urunler">
+                    <div class="swiper-container mySwiper2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide urun">
                     <div class="urun_baslik ">
                         <h4>Elyaf Geri Kazanma Makineleri</h4>
                     </div>
@@ -179,9 +199,8 @@
                             <img src="image/Path@2x.png ">
                         </div>
                     </div>
-
-                </div>
-                <div class="col-3 urun">
+                  </div>
+                  <div class="swiper-slide urun">
                     <div class="urun_baslik ">
                         <h4>Elyaf Geri Kazanma Makineleri</h4>
                     </div>
@@ -194,9 +213,8 @@
                             <img src="image/Path@2x.png ">
                         </div>
                     </div>
-
-                </div>
-                <div class="col-3 urun">
+                  </div>
+                  <div class="swiper-slide urun">
                     <div class="urun_baslik ">
                         <h4>Elyaf Geri Kazanma Makineleri</h4>
                     </div>
@@ -209,9 +227,55 @@
                             <img src="image/Path@2x.png ">
                         </div>
                     </div>
-
+                  </div>
+                  <div class="swiper-slide urun">
+                    <div class="urun_baslik ">
+                        <h4>Elyaf Geri Kazanma Makineleri</h4>
+                    </div>
+                    <div class="urun_icerik">
+                        <h5>DT80 Box Odası</h5>
+                        <div class="urun_icerik_img">
+                            <img src="image/Bitmap@2x.png">
+                        </div>
+                        <div class="ok ">
+                            <img src="image/Path@2x.png ">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide urun">
+                    <div class="urun_baslik ">
+                        <h4>Elyaf Geri Kazanma Makineleri</h4>
+                    </div>
+                    <div class="urun_icerik">
+                        <h5>DT80 Box Odası</h5>
+                        <div class="urun_icerik_img">
+                            <img src="image/Bitmap@2x.png">
+                        </div>
+                        <div class="ok ">
+                            <img src="image/Path@2x.png ">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide urun">
+                    <div class="urun_baslik ">
+                        <h4>Elyaf Geri Kazanma Makineleri</h4>
+                    </div>
+                    <div class="urun_icerik">
+                        <h5>DT80 Box Odası</h5>
+                        <div class="urun_icerik_img">
+                            <img src="image/Bitmap@2x.png">
+                        </div>
+                        <div class="ok ">
+                            <img src="image/Path@2x.png ">
+                        </div>
+                    </div>
+                  </div>
                 </div>
+                <div class="swiper-pagination"></div>
+              </div>
             </div>
+        
+          
         </div>
     </div>
 
@@ -267,7 +331,7 @@
                 <h5>HABERLER</h5>
             </div>
             <div class="col-6 tumunu_gor_buton">
-                <button type="button" class="btn btn-outline-light">Tümünü Gör</button>
+                <button type="button" class="btn btn-outline-light"><a href="haberler.html">Tümünü Gör</a> </button>
             </div>
 
         </div>
@@ -328,71 +392,73 @@
 
     <div class="footer row">
         <div class="col-6 footer_sosyal_medya">
-              <h5>Sosyal Medyada<br>
+            <h5>Sosyal Medyada<br>
                 Bizi Takip Edin</h5>
-                <div class="footer_icon">
-                    <img src="image/Group 20.png">
-                </div>
+            <div class="footer_icon">
+                <img src="image/Group 20.png">
+            </div>
         </div>
 
         <div class="col-6 mail">
             <h3>E-Bültenimize Abone Olun</h3>
             <div class="form">
                 <input class="form_posta" type="email" name="email" placeholder="E-Mail" required>
-              </div>
+            </div>
         </div>
-       <div class="col-12 footer_iletisim row">
-           <div class="col-6 footer_logo">
-               <img src="image/kuyucu tekstil logo@2x.png">
-           </div>
-           <div class="col-6 iletisim_adresleri row">
-               <div class="col-6 adres_img ">
-                       <img src="image/Shape.png">
-                       <span>+90 532 455 53 39</span>
-<br>
-<br>
-<br>
-                        <img src="image/Group 9.png">
-                       <span> +90 532 455 53 39</span>
-               </div>
-               <div class="col-6 adres_img ">
-                <img src="image/Group 7.png">
-              <span> info@kuyumcutekstil.com</span> 
-<br>
-<br>
-<br>
-                 <img src="image/Group 10.png">
-               <span>  1. OSB 83101 Nolu Cadde No:19
-Şehitkamil / Gaziantep</span>
+        <div class="col-12 footer_iletisim row">
+            <div class="col-6 footer_logo">
+                <img src="image/kuyucu tekstil logo@2x.png">
+            </div>
+            <div class="col-6 iletisim_adresleri row">
+                <div class="col-6 adres_img ">
+                    <img src="image/Shape.png">
+                    <span>+90 532 455 53 39</span>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="image/Group 9.png">
+                    <span> +90 532 455 53 39</span>
+                </div>
+                <div class="col-6 adres_img ">
+                    <img src="image/Group 7.png">
+                    <span> info@kuyumcutekstil.com</span>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="image/Group 10.png">
+                    <span> 1. OSB 83101 Nolu Cadde No:19
+                        Şehitkamil / Gaziantep</span>
+                </div>
+                <div class="col-6 adres_yazi">
+
+                </div>
+            </div>
         </div>
-               <div class="col-6 adres_yazi">
 
-               </div>
-           </div>
-       </div>
-
-       <div class="col-12 telif row">
-           <div class="col-6 copyright row">
-               <h5>Copyright © 2021 KUYUCU TEKSTİL & MAKİNA</h5>
-           </div>
-           <div class="col-6 cerez row">
-               <div class="col-4">
-                   <h6>KVKK Aydınlatma Metni </h6>
-               </div>
-               <div class="col-4">
-                   <h6>Çerez Politikası </h6>
-               </div>
-               <div class="col-4">
-                   <h6>Bilgi Toplumu Hizmetleri</h6>
-               </div>
-           </div>
-       </div>
+        <div class="col-12 telif row">
+            <div class="col-6 copyright row">
+                <h5>Copyright © 2021 KUYUCU TEKSTİL & MAKİNA</h5>
+            </div>
+            <div class="col-6 cerez row">
+                <div class="col-4">
+                    <h6>KVKK Aydınlatma Metni </h6>
+                </div>
+                <div class="col-4">
+                    <h6>Çerez Politikası </h6>
+                </div>
+                <div class="col-4">
+                    <h6>Bilgi Toplumu Hizmetleri</h6>
+                </div>
+            </div>
+        </div>
     </div>
-
-
+    <app-swiper-example></app-swiper-example>
+    
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
 
 </html>
